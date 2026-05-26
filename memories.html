@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Memories 📷</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=Pacifico&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="js/script.js" defer></script>
+</head>
+<body class="memories-page">
+
+  <!-- ── Floating Decorations ── -->
+  <div class="deco-layer" aria-hidden="true">
+    <span class="deco pill pink"   style="top:4%;  left:3%;  animation-delay:0s"></span>
+    <span class="deco pill blue"   style="top:10%; right:4%; animation-delay:1s"></span>
+    <span class="deco pill mint"   style="top:88%; left:5%;  animation-delay:0.5s"></span>
+    <span class="deco pill pink"   style="top:92%; right:5%; animation-delay:1.7s"></span>
+    <span class="deco capsule"     style="top:22%; left:1%;  animation-delay:0.3s"></span>
+    <span class="deco capsule rot" style="top:70%; right:2%; animation-delay:1.4s"></span>
+    <span class="deco cross"       style="top:40%; left:2%;  animation-delay:0.8s"></span>
+    <span class="deco cross"       style="top:55%; right:3%; animation-delay:2s"></span>
+    <span class="deco cross sm"    style="top:6%;  left:45%; animation-delay:0.4s"></span>
+    <span class="deco dot"         style="top:95%; left:22%; animation-delay:0.6s"></span>
+    <span class="deco dot lg"      style="top:30%; right:1%; animation-delay:1.2s"></span>
+  </div>
+
+  <!-- ── Back Button ── -->
+  <a href="index.html" class="back-btn" aria-label="Back to main page">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+      <polyline points="15 18 9 12 15 6"/>
+    </svg>
+    Back
+  </a>
+
+  <!-- ── Page Content ── -->
+  <main class="memories-stage">
+    <p class="sub-greeting">a little trip down memory lane 📸</p>
+    <h1 class="main-title">Nadya from Feb POV</h1>
+
+    <!-- ── Photo Grid ── -->
+    <!--
+      ✏️  HOW TO ADD YOUR PHOTOS / VIDEOS:
+      1. Put your image files inside the  assets/photos/  folder.
+      2. Put your video files inside the  assets/videos/  folder.
+      3. Replace the src="assets/photos/photo1.jpg" (etc.) with your actual filenames.
+      4. Update the .caption text for each item.
+      5. To add MORE items, copy one <div class="mem-item"> block and paste it.
+      6. To remove an item, delete the whole <div class="mem-item"> block.
+    -->
+    <div class="gallery-grid" id="gallery">
+
+      <!-- Photo 1 -->
+      <div class="mem-item" onclick="openLightbox(this)">
+        <div class="mem-inner">
+          <img src="assets/photos/photo1.jpeg" alt="Memory 1" loading="lazy" />
+          <div class="mem-overlay">
+            <span class="mem-icon">🔍</span>
+          </div>
+        </div>
+        <p class="caption">HOHOHOHO 🥸</p>
+      </div>
+
+      <!-- Photo 2 -->
+      <div class="mem-item" onclick="openLightbox(this)">
+        <div class="mem-inner">
+          <img src="assets/photos/photo2.jpeg" alt="Memory 2" loading="lazy" />
+          <div class="mem-overlay">
+            <span class="mem-icon">🔍</span>
+          </div>
+        </div>
+        <p class="caption">👍</p>
+      </div>
+
+      <!-- Photo 3 -->
+      <div class="mem-item" onclick="openLightbox(this)">
+        <div class="mem-inner">
+          <img src="assets/photos/photo3.jpeg" alt="Memory 3" loading="lazy" />
+          <div class="mem-overlay">
+            <span class="mem-icon">🔍</span>
+          </div>
+        </div>
+        <p class="caption">Ini senyum natural 😁</p>
+      </div>
+
+      <!-- Photo 4 -->
+      <div class="mem-item" onclick="openLightbox(this)">
+        <div class="mem-inner">
+          <img src="assets/photos/photo4.jpeg" alt="Memory 4" loading="lazy" />
+          <div class="mem-overlay">
+            <span class="mem-icon">🔍</span>
+          </div>
+        </div>
+        <p class="caption">Nature 💦</p>
+      </div>
+
+      <!-- Photo 5 -->
+      <div class="mem-item" onclick="openLightbox(this)">
+        <div class="mem-inner">
+          <img src="assets/photos/photo5.jpeg" alt="Memory 5" loading="lazy" />
+          <div class="mem-overlay">
+            <span class="mem-icon">🔍</span>
+          </div>
+        </div>
+        <p class="caption">Bowling 🎳</p>
+      </div>
+
+      <!-- Photo 6 -->
+      <div class="mem-item" onclick="openLightbox(this)">
+        <div class="mem-inner">
+          <img src="assets/photos/photo6.jpeg" alt="Memory 6" loading="lazy" />
+          <div class="mem-overlay">
+            <span class="mem-icon">🔍</span>
+          </div>
+        </div>
+        <p class="caption">hehe 🙂</p>
+      </div>
+
+      <!-- Photo 7 -->
+      <div class="mem-item" onclick="openLightbox(this)">
+        <div class="mem-inner">
+          <img src="assets/photos/photo7.jpeg" alt="Memory 7" loading="lazy" />
+          <div class="mem-overlay">
+            <span class="mem-icon">🔍</span>
+          </div>
+        </div>
+        <p class="caption">wlee 😋</p>
+      </div>
+
+      <!-- Photo 8 -->
+      <div class="mem-item" onclick="openLightbox(this)">
+        <div class="mem-inner">
+          <img src="assets/photos/photo8.jpeg" alt="Memory 8" loading="lazy" />
+          <div class="mem-overlay">
+            <span class="mem-icon">🔍</span>
+          </div>
+        </div>
+        <p class="caption">sleeping 😴</p>
+      </div>
+
+      <!-- Photo 9 -->
+      <div class="mem-item" onclick="openLightbox(this)">
+        <div class="mem-inner">
+          <img src="assets/photos/photo9.jpeg" alt="Memory 9" loading="lazy" />
+          <div class="mem-overlay">
+            <span class="mem-icon">🔍</span>
+          </div>
+        </div>
+        <p class="caption">😊 📸</p>
+      </div>
+
+      <!-- Photo 10 -->
+      <div class="mem-item" onclick="openLightbox(this)">
+        <div class="mem-inner">
+          <img src="assets/photos/photo10.jpeg" alt="Memory 10" loading="lazy" />
+          <div class="mem-overlay">
+            <span class="mem-icon">🔍</span>
+          </div>
+        </div>
+        <p class="caption">Caption for photo 10 💙</p>
+      </div>
+
+      <!-- Photo 11 -->
+      <div class="mem-item" onclick="openLightbox(this)">
+        <div class="mem-inner">
+          <img src="assets/photos/photo11.jpeg" alt="Memory 11" loading="lazy" />
+          <div class="mem-overlay">
+            <span class="mem-icon">🔍</span>
+          </div>
+        </div>
+        <p class="caption">Caption for photo 11 💙</p>
+      </div>
+
+      <!-- Photo 12 -->
+      <div class="mem-item" onclick="openLightbox(this)">
+        <div class="mem-inner">
+          <img src="assets/photos/photo12.jpeg" alt="Memory 12" loading="lazy" />
+          <div class="mem-overlay">
+            <span class="mem-icon">🔍</span>
+          </div>
+        </div>
+        <p class="caption">Caption for photo 12 💙</p>
+      </div>
+
+      <!-- Photo 13 -->
+      <div class="mem-item" onclick="openLightbox(this)">
+        <div class="mem-inner">
+          <img src="assets/photos/photo13.jpeg" alt="Memory 13" loading="lazy" />
+          <div class="mem-overlay">
+            <span class="mem-icon">🔍</span>
+          </div>
+        </div>
+        <p class="caption">Caption for photo 13 💙</p>
+      </div>
+
+      <!-- Photo 14 -->
+      <div class="mem-item" onclick="openLightbox(this)">
+        <div class="mem-inner">
+          <img src="assets/photos/photo14.jpeg" alt="Memory 14" loading="lazy" />
+          <div class="mem-overlay">
+            <span class="mem-icon">🔍</span>
+          </div>
+        </div>
+        <p class="caption">Caption for photo 14 💙</p>
+      </div>
+
+      <!-- Photo 15 -->
+      <div class="mem-item" onclick="openLightbox(this)">
+        <div class="mem-inner">
+          <img src="assets/photos/photo15.jpeg" alt="Memory 15" loading="lazy" />
+          <div class="mem-overlay">
+            <span class="mem-icon">🔍</span>
+          </div>
+        </div>
+        <p class="caption">Caption for photo 15 💙</p>
+      </div>
+
+      <!-- Photo 16 -->
+      <div class="mem-item" onclick="openLightbox(this)">
+        <div class="mem-inner">
+          <img src="assets/photos/photo16.jpeg" alt="Memory 16" loading="lazy" />
+          <div class="mem-overlay">
+            <span class="mem-icon">🔍</span>
+          </div>
+        </div>
+        <p class="caption">Caption for photo 16 💙</p>
+      </div>
+
+      <!-- ── VIDEO EXAMPLE (uncomment & edit to use) ──
+      <div class="mem-item video-item">
+        <div class="mem-inner">
+          <video src="assets/videos/video1.mp4" controls poster="assets/photos/video1-thumb.jpg"></video>
+        </div>
+        <p class="caption">Video caption here 🎬</p>
+      </div>
+      -->
+
+    </div>
+  </main>
+
+  <!-- ── Lightbox ── -->
+  <div class="lightbox" id="lightbox" onclick="closeLightbox()">
+    <button class="lightbox-close" onclick="closeLightbox()" aria-label="Close">✕</button>
+    <img id="lightboxImg" src="" alt="Full size" />
+    <p id="lightboxCaption" class="lightbox-caption"></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

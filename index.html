@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Happy Birthday! 🎂</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=Pacifico&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+
+  <!-- ── Floating Medicine Decorations ── -->
+  <div class="deco-layer" aria-hidden="true">
+    <span class="deco pill pink"  style="top:6%;  left:4%;  animation-delay:0s"></span>
+    <span class="deco pill blue"  style="top:12%; right:5%; animation-delay:1.2s"></span>
+    <span class="deco pill mint"  style="top:78%; left:7%;  animation-delay:0.6s"></span>
+    <span class="deco pill pink"  style="top:82%; right:6%; animation-delay:1.8s"></span>
+    <span class="deco capsule"    style="top:20%; left:2%;  animation-delay:0.3s"></span>
+    <span class="deco capsule rot" style="top:65%; right:3%; animation-delay:1.5s"></span>
+    <span class="deco cross"      style="top:35%; left:3%;  animation-delay:0.9s"></span>
+    <span class="deco cross"      style="top:50%; right:4%; animation-delay:2.1s"></span>
+    <span class="deco cross sm"   style="top:8%;  left:40%; animation-delay:0.4s"></span>
+    <span class="deco cross sm"   style="top:90%; left:55%; animation-delay:1.6s"></span>
+    <span class="deco dot"        style="top:92%; left:20%; animation-delay:0.7s"></span>
+    <span class="deco dot"        style="top:3%;  right:25%;animation-delay:2.3s"></span>
+    <span class="deco dot lg"     style="top:45%; left:1%;  animation-delay:1.1s"></span>
+    <span class="deco dot lg"     style="top:28%; right:2%; animation-delay:0.2s"></span>
+  </div>
+
+  <!-- ── Main Content ── -->
+  <main class="stage">
+
+    <p class="sub-greeting">wishing you a wonderful day 💊</p>
+    <h1 class="main-title">Happy Birthday Nadya!</h1>
+
+    <!-- ── Cake ── -->
+    <div class="cake-wrap">
+      <div class="cake" id="cake">
+
+        <!-- Candles -->
+        <div class="candles-row">
+          <div class="candle" data-id="1">
+            <div class="flame-wrap">
+              <div class="flame"></div>
+              <div class="smoke" style="display:none"></div>
+            </div>
+            <div class="wick"></div>
+            <div class="wax"></div>
+          </div>
+          <div class="candle" data-id="2">
+            <div class="flame-wrap">
+              <div class="flame"></div>
+              <div class="smoke" style="display:none"></div>
+            </div>
+            <div class="wick"></div>
+            <div class="wax"></div>
+          </div>
+          <div class="candle" data-id="3">
+            <div class="flame-wrap">
+              <div class="flame"></div>
+              <div class="smoke" style="display:none"></div>
+            </div>
+            <div class="wick"></div>
+            <div class="wax"></div>
+          </div>
+        </div>
+
+        <!-- Cake tiers -->
+        <div class="tier top-tier">
+          <div class="frosting top-frosting"></div>
+          <div class="decorations-cake">
+            <span class="sprinkle" style="left:15%;top:40%;background:#FF8FAB"></span>
+            <span class="sprinkle" style="left:35%;top:55%;background:#74B9FF"></span>
+            <span class="sprinkle" style="left:55%;top:35%;background:#5ECFBF"></span>
+            <span class="sprinkle" style="left:70%;top:60%;background:#FFD166"></span>
+            <span class="sprinkle" style="left:82%;top:40%;background:#FF8FAB"></span>
+          </div>
+        </div>
+
+        <div class="tier mid-tier">
+          <div class="frosting mid-frosting"></div>
+          <div class="decorations-cake">
+            <span class="pill-deco" style="left:10%;top:30%"></span>
+            <span class="cross-deco" style="left:40%;top:25%"></span>
+            <span class="pill-deco blue-p" style="left:65%;top:35%"></span>
+            <span class="cross-deco" style="left:82%;top:28%"></span>
+            <span class="sprinkle" style="left:25%;top:65%;background:#FFD166"></span>
+            <span class="sprinkle" style="left:55%;top:70%;background:#5ECFBF"></span>
+          </div>
+        </div>
+
+        <div class="tier bot-tier">
+          <div class="frosting bot-frosting"></div>
+          <div class="decorations-cake">
+            <span class="pill-deco" style="left:8%;top:35%"></span>
+            <span class="sprinkle" style="left:25%;top:60%;background:#74B9FF"></span>
+            <span class="cross-deco" style="left:45%;top:28%"></span>
+            <span class="sprinkle" style="left:62%;top:65%;background:#FF8FAB"></span>
+            <span class="pill-deco blue-p" style="left:76%;top:38%"></span>
+          </div>
+        </div>
+
+        <!-- Plate -->
+        <div class="plate"></div>
+      </div>
+
+      <!-- Click-to-blow hint -->
+      <p class="blow-hint" id="blowHint">🌬️ Tap the candles to blow them out!</p>
+      <p class="blown-msg" id="blownMsg" style="display:none">🎉 Don't forget to make a wish! 🎉</p>
+    </div>
+
+    <!-- ── Action Cards ── -->
+    <div class="action-row">
+      <button class="action-card" id="msgBtn" aria-label="Open birthday message">
+        <div class="action-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="2" y="4" width="20" height="16" rx="3"/>
+            <polyline points="2,4 12,13 22,4"/>
+          </svg>
+        </div>
+        <span class="action-label">Message</span>
+      </button>
+
+      <button class="action-card" id="memBtn" aria-label="View memories" onclick="window.location.href='memories.html'">
+        <div class="action-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/>
+            <circle cx="12" cy="13" r="4"/>
+          </svg>
+        </div>
+        <span class="action-label">Memories</span>
+      </button>
+    </div>
+
+  </main>
+
+  <!-- ── Message Modal ── -->
+  <div class="modal-overlay" id="modalOverlay" role="dialog" aria-modal="true" aria-label="Birthday Message">
+    <div class="modal-box">
+      <button class="modal-close" id="modalClose" aria-label="Close">✕</button>
+      <div class="modal-deco-top"></div>
+
+      <div class="modal-icon">💌</div>
+      <h2 class="modal-title">A Note For You</h2>
+
+      <div class="modal-body">
+        <p>Dear Nad 💌,</p>
+
+        <p>
+          Happy 21st birthday yaaa 🎂🤍! Jangan lupa tiup lilinnya yang beneran
+          biar wish-nya nanti beneran granted 🌬️🕯️✨. Semoga semua urusan u
+          lancar terus, including medicine di NUS 🩺📚💊.
+        </p>
+
+        <p>
+          Don’t push yourself too hard ya! Sesekali istirahat, refreshing,
+          ama ambil napas bentar (jangan bentar doang deng, seterusnya!)🌿☁️. Please keep that smile
+          and laugh, okay? 😭💖 Ketawa lu tu nular weh ☀️✨.
+        </p>
+
+        <p>
+          Jangan lupa jaga diri sendiri yaa 🥺 — perhatiin makan 🍜, tidur 😴,
+          dan jaga your health 🤍. Intinya, di 21 ini, may this year bring you
+          everything your heart desires: good health, endless happiness, and all
+          the prescriptions for success! 💊🌸✨
+        </p>
+
+        <p>
+          Kemaren ini lu selalu ga konsisten make 'aku' ato 'gw' 😭. Pilih 1 yaa. Aku bisa adjust
+          yang mana juga ko panggilannya ✨.
+        </p>
+
+        <p>
+          Kalau ada apa-apa, jangan lupa u boleh call gw ya ☎️💙!!!
+          GOD BLESS YOU NAD 🙏✨ WISH YOU ALL THE BEST ALWAYS 🌷🎉
+        </p>
+
+        <p class="modal-sign">— With all my love 🌿💌</p>
+      </div>
+
+      <div class="modal-deco-bot"></div>
+    </div>
+  </div>
+
+  <!-- ── Confetti Canvas ── -->
+  <canvas id="confettiCanvas"></canvas>
+
+  <script src="script.js"></script>
+</body>
+</html>
